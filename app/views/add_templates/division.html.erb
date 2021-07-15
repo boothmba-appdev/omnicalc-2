@@ -1,17 +1,15 @@
-<%# /wizard_add?first_num=33&second_num=122 %>
+<!DOCTYPE html>
+<html>
+    <title>Omnicalc 2</title>
+  <body>
+    <h1>New division</h1>
 
 <form action="/wizard_divide">
-  <div>
-    <label for="zebra">First number:</label>
-    <input id="zebra" name="first_num">
-  </div>
+  <label for="first_field">Divide this:</label>
+  <input type="text" id="first_field" name="first_num">
 
-  <div>
-    <label for="giraffe">Second number:</label>
-    <input id="giraffe" name="second_num">
-  </div>
+  <label for="second_field">by this:</label>
+  <input type="text" id="second_field" name="second_num">
 
-  <button>
-    Divide!
-  </button>
+  <button>Divide!</button>
 </form>

@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get("/street_to_coords/new", { :controller => "application", :action => "street_to_coords_form" })
   get("/wizard_street_to_coords", { :controller => "application", :action => "street_to_coords_results" })
 
+  get("/muggle_translate", { :controller => "application", :action => "translator_form" })
+  get("/wizard_translate", { :controller => "application", :action => "translator_results" })
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
 
